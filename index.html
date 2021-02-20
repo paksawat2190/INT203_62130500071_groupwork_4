@@ -40,14 +40,14 @@
         <div id="container" class="max-w-xl mx-auto">
           <!-- header -->
           <div>
-            <h1 class="mt-3 flex justify-center items-center text-3xl
+            <h1 class="mt-3 flex justify-center items-center text-3xl mb-7
               font-bold">Photo Gallery ( {{countphoto}} )</h1>
             <!-- search -->
-            <div class="flex justify-between">
+            <div class="flex justify-between w-max">
               
               <input v-if="search.box" v-model="inputTask" @keyup.enter="searchphoto"
                 placeholder="Please enter text for searching photos ..."
-                class=" p-2 bg-white rounded border-2 border-blue-300">    
+                class=" p-2 bg-white rounded border-2 border-blue-300 w-96 ">    
           
               <button @click="openbox()">
                 <img v-if="search.icon" src="image/search.jpg" width="30" >

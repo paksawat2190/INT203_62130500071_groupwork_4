@@ -22,6 +22,7 @@ const app = {
             this.search.icon=!this.search.icon;
             for(let i=0; i<this.photos.length; i++){
                 this.photos[i].show=true;
+                this.error=false;
             }
          },hover(index){
             
@@ -35,7 +36,7 @@ const app = {
                     }
                     else {
                         this.photos[i].show = false;
-                        this.error=true;
+                        this.error=!this.error;
                     }
                 }
             }
